@@ -44,13 +44,13 @@ app.delete("/delete/:id",async (req,res)=>{
             _id:req.params.id
         })
         console.log(req.params.id)
-        res.json({message:"deleted"})
+        res.json({data})
     }catch(error){
         console.log(error)
     }
 })
 
 
-app.listen(port,(err)=>{
+app.listen(port, (err) => {
     console.log(`listening to ${port}`)
 })
